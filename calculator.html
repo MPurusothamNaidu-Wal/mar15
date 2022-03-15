@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        background-image: linear-gradient(rgb(9, 107, 194), white);
+        background-repeat: no-repeat;
+        background-color: aliceblue;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        background-color: bisque;
+        padding: 15px;
+      }
+      input {
+        background-color: rgb(166, 201, 163);
+        width: 40%;
+        height: 30px;
+        border-radius: 10px;
+        border: 5px solid rgb(76, 76, 151);
+      }
+      label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: x-large;
+      }
+      button {
+        width: 60%;
+        background-color: rgb(145, 99, 187);
+        height: 60px;
+        padding: 5px;
+        border-radius: 50px;
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/operate" method="post">
+      <h2>Performing Basic Calculations</h2>
+      <label>Number 1 :</label>
+      <input type="number" name="num1" /><br />
+      <label>Number 2 :</label>
+      <input type="number" name="num2" /><br />
+      <label>Select Operation</label>
+      <select name="operator" aria-label="Default select example">
+        <option value="add">Addition</option>
+        <option value="sub">Subtraction</option>
+        <option value="mul">Multiplication</option>
+        <option value="div">Division</option>
+      </select>
+      <div>
+        <button class="btn btn-primary">Perform Operation</button>
+      </div>
+    </form>
+  </body>
+</html>
